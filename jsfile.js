@@ -1,4 +1,4 @@
-const handleWindowLoad = () => {
+const homeworkSwitchCase = () => {
   const unit = prompt("Type unit here, please");
   const value = prompt("Type a value here, please");
 
@@ -33,4 +33,22 @@ const handleWindowLoad = () => {
   }
 };
 
-window.addEventListener("load", handleWindowLoad);
+const homeworkAge = () => {
+  const age = Number(prompt("Type your age here, please:"));
+
+  if (isNaN(age) || age < 1) {
+    alert("Wrong age");
+    return;
+  }
+
+  if (age === 1) {
+    alert(`${age} рік`);
+  } else if (age < 5) {
+    alert(`${age} роки`);
+  } else {
+    alert(`${age} років`);
+  }
+};
+
+//switch func here
+window.addEventListener("load", homeworkAge);
